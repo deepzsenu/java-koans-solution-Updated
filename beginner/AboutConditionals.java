@@ -58,7 +58,7 @@ public class AboutConditionals {
         else
             x--;
         // ...but they are recommended.
-        assertEquals(x, 10);
+        assertEquals(x,10);
     }
 
     @Koan
@@ -93,7 +93,7 @@ public class AboutConditionals {
             default:
                 result += "Nothing";
         }
-        assertEquals(result, "Basic One");
+        assertEquals(result,"Basic One");
     }
 
     @Koan
@@ -123,7 +123,7 @@ public class AboutConditionals {
             case 2:
                 result += "Two";
         }
-        assertEquals(result,"Basic NothingTwo");
+        assertEquals(result, "Basic NothingTwo");
     }
 
     @Koan
@@ -169,10 +169,10 @@ public class AboutConditionals {
             x = "kthxbai";
         }
         assertEquals(x, "kthxbai");
-        assertEquals(trueCount.count,1);
+        assertEquals(trueCount.count, 1);
         assertEquals(falseCount.count, 0);
     }
-    
+
     @Koan
     public void bitwise() {
         Counter trueCount = new Counter(true);
@@ -185,7 +185,6 @@ public class AboutConditionals {
         assertEquals(trueCount.count, 1);
         assertEquals(falseCount.count, 1);
     }
-    
     class Counter {
         boolean returnValue;
         int count = 0;
